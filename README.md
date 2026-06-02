@@ -8,6 +8,8 @@ A home lab focused on setting up Wazuh SIEM, Ubuntu agent and Kali Linux attacke
 - SIEM - Wazuh
 
 # Network Diagram
+<img width="2908" height="2204" alt="image" src="https://github.com/user-attachments/assets/5b29099d-c78c-4176-a63c-3f7d1f81544b" />
+
 
 # Installation and Configuration
 In order to run the SIEM home lab, it is necessary to have a SIEM and at least two machines - one that will act as an agent and the second one that will be an attacking machine. In this case the hypervisor will be VirtualBox, while three virtual machines will be deployed - Wazuh (SIEM), Ubuntu CISCO LabVM (agent) and Kali (attacking machine).
