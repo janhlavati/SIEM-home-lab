@@ -29,3 +29,18 @@ Configuration of Wazuh WM:
 
 
 After the deployment of all three virtual machines, another thing that was done was connecting them together - in other words making the Ubuntu VM a Wazuh agent. This was done by downloading and installing Wazuh on Ubuntu from the Wazuh dashboard generated link. Once the Ubuntu was confirmed as Wazuh agent it could be monitored through a web browser SIEM dashboard.
+
+# Attack Execution
+The attack was executed from the Kali Linux VM, which has available tools for penetration and vulnerability testing pre-downloaded. The tools used for network attacks in this project are: Nmap, Hydra and John.
+
+### 1. Network Mapping & Reconnaissance
+Nmap is one of the tools that is used for Reconnaissance attacks, network scanning and port mapping. This tool is useful to gather the network data about the device which can show the attacker potential routes for an attack (e.g. open ports).
+
+### 2. Active Authentication Brute-Force
+Once the open port is discovered, the attacker can use utilities like Hydra to crack the password by brute-force.
+
+### 3. Lateral Movement & Privilege Escalation
+Since the Hydra managed to crack the password of the regular user we have managed to gain the access to the Ubuntu machine as a regular user. The regular user, however, does not have an access to system files (e.g. /etc/shadow) the attacker needs to escalate to root/superuser.
+
+### 4. Post-Compromise Offline Cracking
+Another tool that is used for cracking passwords is John - it is one of the fastest offline password cracking tools.
