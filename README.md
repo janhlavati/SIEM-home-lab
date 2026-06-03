@@ -27,3 +27,5 @@ Configuration of Wazuh WM:
 
 <img width="1106" height="872" alt="image" src="https://github.com/user-attachments/assets/a7fbad43-15f1-40fc-93d0-f4a0a470e8f6" />
 
+
+After the deployment of all three virtual machines, another thing that was done was connecting them together - in other words making the Ubuntu VM a Wazuh agent. This was done by downloading and installing Wazuh on Ubuntu from the Wazuh dashboard generated link. Once the Ubuntu was confirmed as Wazuh agent it could be monitored through a web browser SIEM dashboard.
