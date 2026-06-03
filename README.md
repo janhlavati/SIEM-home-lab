@@ -22,3 +22,8 @@ Configuration of Ubuntu CISCO LabVM:
 Configuration of Kali Linux VM:
 
 <img width="1107" height="876" alt="image" src="https://github.com/user-attachments/assets/3615e628-1324-4a6f-b708-303dda226fee" />
+
+Configuration of Wazuh WM:
+
+<img width="1106" height="872" alt="image" src="https://github.com/user-attachments/assets/a7fbad43-15f1-40fc-93d0-f4a0a470e8f6" />
+
