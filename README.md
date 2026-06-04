@@ -34,7 +34,15 @@ After the deployment of all three virtual machines, another thing that was done 
 The attack was executed from the Kali Linux VM, which has available tools for penetration and vulnerability testing pre-downloaded. The tools used for network attacks in this project are: Nmap, Hydra and John.
 
 ### 1. Network Mapping & Reconnaissance
-Nmap is one of the tools that is used for Reconnaissance attacks, network scanning and port mapping. This tool is useful to gather the network data about the device which can show the attacker potential routes for an attack (e.g. open ports).
+Nmap is one of the tools that is used for Reconnaissance attacks, network scanning and port mapping. This tool is useful to gather the network data about the device which can show the attacker potential routes for an attack (e.g. open ports). The command that was used for the reconnaissance attack was "sudo nmap -A -v -T4 192.168.56.103". 
+- sudo nmap: runs the nmap tool with root administrative privilege
+- -A: aggressive mode
+- -v: prints the port immediately when they are discovered
+- -T4: time template, T0 is silent and slow, while T4 is aggressive and fast
+- 192.168.56.103: the ip address of the Ubuntu VM
+
+<img width="1271" height="874" alt="Screenshot 2026-05-31 134224" src="https://github.com/user-attachments/assets/5db552ed-ad68-41c6-ac54-47700d6003db" />
+
 
 ### 2. Active Authentication Brute-Force
 Once the open port is discovered, the attacker can use utilities like Hydra to crack the password by brute-force.
