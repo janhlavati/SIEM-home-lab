@@ -60,6 +60,10 @@ Once the open port is discovered, the attacker can use utilities like Hydra to c
 
 <img width="657" height="512" alt="Screenshot 2026-05-31 140856" src="https://github.com/user-attachments/assets/c70b8a72-c3e0-4743-9d0c-7aafa944d37e" />
 
+Every failed attempt on Ubuntu VM writes a line to /var/auth.log, that is the file that the Wazuh agent reads in real time. Therefore, the dashboard will provide the overview of login attempts.
+
+<img width="1919" height="1016" alt="Screenshot 2026-05-31 140910" src="https://github.com/user-attachments/assets/61ca3b56-72ca-4f1c-92e5-5a46a6af1d94" />
+
 
 ### 3. Lateral Movement & Privilege Escalation
 Since the Hydra managed to crack the password of the regular user we have managed to gain the access to the Ubuntu machine as a regular user. The regular user, however, does not have an access to system files (e.g. /etc/shadow) the attacker needs to escalate to root/superuser.
