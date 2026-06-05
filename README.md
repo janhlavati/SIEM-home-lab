@@ -43,6 +43,11 @@ Nmap is one of the tools that is used for Reconnaissance attacks, network scanni
 
 <img width="1271" height="874" alt="Screenshot 2026-05-31 134224" src="https://github.com/user-attachments/assets/5db552ed-ad68-41c6-ac54-47700d6003db" />
 
+Here are images of caught traffic on Wazuh agent:
+
+<img width="959" height="744" alt="Screenshot 2026-05-31 135013" src="https://github.com/user-attachments/assets/0ce8d930-d0c1-4678-aff1-1c533c8b348e" />
+<img width="955" height="741" alt="Screenshot 2026-05-31 135334" src="https://github.com/user-attachments/assets/8361567f-1ee3-48de-a566-cd36943ffd59" />
+
 
 ### 2. Active Authentication Brute-Force
 Once the open port is discovered, the attacker can use utilities like Hydra to crack the password by brute-force.
