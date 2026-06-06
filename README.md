@@ -64,6 +64,7 @@ Every failed attempt on Ubuntu VM writes a line to /var/auth.log, that is the fi
 
 <img width="1919" height="1016" alt="Screenshot 2026-05-31 140910" src="https://github.com/user-attachments/assets/61ca3b56-72ca-4f1c-92e5-5a46a6af1d94" />
 
+We can see failed ssh authentication sessions at first, and after that a successful one - which is the successful brute-force attempt.
 
 ### 3. Lateral Movement & Privilege Escalation
 Since the Hydra managed to crack the password of the regular user we have managed to gain the access to the Ubuntu machine as a regular user. The regular user, however, does not have an access to system files (e.g. /etc/shadow) the attacker needs to escalate to root/superuser.
