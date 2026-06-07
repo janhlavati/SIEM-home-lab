@@ -67,7 +67,15 @@ Every failed attempt on Ubuntu VM writes a line to /var/auth.log, that is the fi
 We can see failed ssh authentication sessions at first, and after that a successful one - which is the successful brute-force attempt.
 
 ### 3. Lateral Movement & Privilege Escalation
-Since the Hydra managed to crack the password of the regular user we have managed to gain the access to the Ubuntu machine as a regular user. The regular user, however, does not have an access to system files (e.g. /etc/shadow) the attacker needs to escalate to root/superuser.
+Since the Hydra managed to crack the password of the cisco user we have managed to gain the access to the Ubuntu machin. The regular user, however, does not have an access to system files (e.g. /etc/shadow), but in this case cisco user have root privileges.
+
+<img width="1278" height="818" alt="Screenshot 2026-05-31 142119" src="https://github.com/user-attachments/assets/1aa4b87e-80e8-401e-89e8-7b1ede0e6605" />
+
+Here we can see a display of alerts and 5402 rule.id - which marks the successful root login.
+
+<img width="1918" height="991" alt="Screenshot 2026-05-31 142204" src="https://github.com/user-attachments/assets/dc16fa7e-fe98-43aa-98af-65b757dcffad" />
+
+
 
 ### 4. Post-Compromise Offline Cracking
 Another tool that is used for cracking passwords is John - it is one of the fastest offline password cracking tools. It is using the text file rockyou.txt where it is checking the dictionary and unshadowing passwords.
