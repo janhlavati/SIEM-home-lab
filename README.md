@@ -76,6 +76,12 @@ Here we can see a display of alerts and 5402 rule.id - which marks the successfu
 <img width="1918" height="991" alt="Screenshot 2026-05-31 142204" src="https://github.com/user-attachments/assets/dc16fa7e-fe98-43aa-98af-65b757dcffad" />
 
 
-
 ### 4. Post-Compromise Offline Cracking
-Another tool that is used for cracking passwords is John - it is one of the fastest offline password cracking tools. It is using the text file rockyou.txt where it is checking the dictionary and unshadowing passwords.
+Another tool that is used for cracking passwords is John - it is one of the fastest offline password cracking tools. It is using the text file rockyou.txt where it is checking the dictionary and unshadowing passwords. Since we managed to gain the access to root user, we have an access to shadow file and we can use the unshadow tool to unshadow the hashed passwords. The command used for unshadowing is: "sudo unshadow /etc/passwd /etc/shadow > unshadowed_hashes.txt".
+- sudo unshadow: root privileges to run unshadow tool
+- /etc/passwd /etc/shadow: path to the passwd and shadow files that contains public account details, and the actual hashes
+- > unshadowed_hashes.txt: path to the new file where it combines text stream and redirects it into clean local file
+
+<img width="1272" height="799" alt="Screenshot 2026-05-31 144610" src="https://github.com/user-attachments/assets/75cceec6-a182-42e0-8591-5627026e605c" />
+
+
