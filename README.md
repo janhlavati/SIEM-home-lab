@@ -84,4 +84,5 @@ Another tool that is used for cracking passwords is John - it is one of the fast
 
 <img width="1272" height="799" alt="Screenshot 2026-05-31 144610" src="https://github.com/user-attachments/assets/75cceec6-a182-42e0-8591-5627026e605c" />
 
+<img width="1919" height="994" alt="Screenshot 2026-05-31 144953" src="https://github.com/user-attachments/assets/543031ee-0ecf-4782-b334-2b8aef6c25f2" />
 
