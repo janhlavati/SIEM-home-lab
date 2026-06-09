@@ -91,3 +91,5 @@ The command we used afterwards was: "sudo john --single unshadowed_hashes.txt" t
 
 <img width="1919" height="994" alt="Screenshot 2026-05-31 144953" src="https://github.com/user-attachments/assets/543031ee-0ecf-4782-b334-2b8aef6c25f2" />
 
+As we can see, nothing was monitored in Wazuh SIEM dashboard, because the process of cracking was done offline, however, wazuh detected login attempts in previous steps where it notified us about possible threats.
+
